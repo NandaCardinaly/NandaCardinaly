@@ -1,4 +1,4 @@
-### Olá, eu sou a Nanda!
+### Hi, my name is Fernanda!
 <div align="center">
   <a href="https://github.com/nandacardinaly">
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=nandacardinaly&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
@@ -6,7 +6,7 @@
 </div>
 <div style="display: inline_block"><br>
 
-My name is Fernanda, and i am Salesforce Analyst Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
+I am Salesforce Analyst Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
           
 
 </div>

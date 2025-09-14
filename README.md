@@ -6,7 +6,7 @@
 </div>
 <div style="display: inline_block"><br>
 
-I am Salesforce Analyst Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
+I am Senior Salesforce Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
           
 
 </div>

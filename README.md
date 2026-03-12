@@ -1,12 +1,7 @@
 ### Hi, my name is Fernanda!
-<div align="center">
-  <a href="https://github.com/nandacardinaly">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=nandacardinaly&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nandacardinaly&layout=compact&langs_count=7&theme=dracula"/>
-</div>
 <div style="display: inline_block"><br>
 
-I am Senior Salesforce Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
+I am Senior Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
           
 
 </div>

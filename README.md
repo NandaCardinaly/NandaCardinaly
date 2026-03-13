@@ -1,7 +1,7 @@
 ### Hi, my name is Fernanda!
 <div style="display: inline_block"><br>
 
-I am Senior Developer with a strong foundation in Apex solutions such as triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
+I am Senior Developer with a strong foundation in Typescript, Java, Javascript, Python and Salesforce solutions such as Apex, triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
           
 
 </div>

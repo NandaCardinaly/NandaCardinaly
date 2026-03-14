@@ -1,12 +1,18 @@
-### Hi, my name is Fernanda!
-<div style="display: inline_block"><br>
+👩‍💻 About Me
+Computer Engineer · Data Engineering Specialist · Backend Developer since 2007
+Nearly two decades in the industry have taken me from writing Java at a time when smartphones barely existed to architecting cloud-native solutions on Salesforce today. I don't just write code — I engineer systems that scale.
 
-I am Senior Developer with a strong foundation in Typescript, Java, Javascript, Python and Salesforce solutions such as Apex, triggers, classes, and batch processes, Lightning Web Components (LWC), Aura, VisualForce Pages, Integrating Salesforce with other systems and platforms, using REST APIs.
-          
+🔧 What I work with
+My backend roots run deep. Over the years I've built production systems in Java, C#, Python, and JavaScript/Node.js, and I'm equally comfortable dropping into C++ or PHP when the job demands it. I pick the right tool — not the fashionable one.
+On the data side, I've worked extensively with relational databases (PostgreSQL, MySQL, SQL Server, Oracle), NoSQL (MongoDB, Firebase/Firestore), and cloud data layers — including integrations with AWS (S3, Lambda, SQS) and pipeline orchestration. Data modeling, query optimization, and ETL design are second nature to me.
+My current focus is Salesforce development — Apex, SOQL, LWC, integrations via REST/SOAP, platform events, and everything that comes with building enterprise-grade solutions in a heavily governed cloud environment.
 
-</div>
+⚙️ Stack snapshot
+Java · Python · C# · JavaScript · Node.js · Apex · SOQL
+PostgreSQL · MySQL · SQL Server · MongoDB · Firebase
+AWS · Salesforce Platform · REST APIs · Supabase
+Spring · Express · .NET · LWC · Git
   
-  ##
  
 <div align="center"> 
    <a href="https://steamcommunity.com/id/nandawar" target="_blank"><img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white" target="_blank"></a> 

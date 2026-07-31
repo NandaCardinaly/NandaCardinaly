@@ -749,6 +749,17 @@ section {
   border-color: var(--brand-2);
 }
 
+/* O menu nativo do <select> é renderizado pelo navegador/SO com fundo claro,
+   então as <option> precisam de cor escura para não ficarem ilegíveis. */
+.form-row select {
+  color-scheme: light;
+}
+
+.form-row select option {
+  color: #1a1330;
+  background: #ffffff;
+}
+
 .form-note {
   font-size: 1.2rem;
   color: var(--text-mute);

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" fill="none">
+  <defs>
+    <linearGradient id="wingLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd7e2"/>
+    </linearGradient>
+    <linearGradient id="wingPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ff5f8f"/>
+    </linearGradient>
+  </defs>
+  <path d="M4 62 C 40 100, 90 100, 118 62 C 90 34, 40 34, 4 62 Z" fill="url(#wingPink)"/>
+  <path d="M118 20 C 130 55, 130 95, 90 150 C 65 130, 55 95, 68 62 C 80 40, 100 26, 118 20 Z" fill="url(#wingLight)"/>
+</svg>

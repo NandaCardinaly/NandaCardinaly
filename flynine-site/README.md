@@ -24,11 +24,14 @@ flynine-site/
 ### Antes de publicar, atualize:
 
 - `assets/img/logo-mark.svg` / `favicon.svg` — com a arte oficial, se quiser trocar o placeholder.
-- Número de WhatsApp: buscar `5500000000000` em `index.html` (aparece 2x) e trocar pelo seu número
-  no formato `55DDDNÚMERO`.
 - E-mail exibido na seção de contato (`contato@flynine.com.br`).
-- `oid` e `retURL` do formulário Salesforce (explicado abaixo).
+- `oid`, `retURL` e o widget de reCAPTCHA do formulário Salesforce (explicado na seção 3).
 - Link do LinkedIn no rodapé/contato.
+
+> O site não usa WhatsApp como canal por enquanto (a única chamada para ação, no botão fixo
+> do canto da tela e em todos os CTAs, leva ao formulário/Web-to-Lead em `#contato`). O
+> "Atendimento no WhatsApp com IA" que aparece nos badges de serviço é um produto vendido a
+> clientes — não depende de você ter um WhatsApp Business próprio.
 
 ---
 
@@ -95,17 +98,34 @@ O formulário de contato do site (`index.html`, seção `#contato`) já está no
 
 ### 3.1 Capturar leads do site direto no Salesforce
 
-1. No Salesforce: **Setup → Web-to-Lead → Create Web-to-Lead Form**.
-2. Selecione os campos: Nome, Sobrenome, Empresa, E-mail, Telefone, Descrição (e crie um
+Desde 2022 a Salesforce exige um **reCAPTCHA** em todo formulário Web-to-Lead novo — sem isso
+a tela de geração do form nem libera o HTML. É uma proteção contra bots enviando leads falsos
+para esse endpoint público. Passo a passo completo:
+
+1. Crie um site em https://www.google.com/recaptcha/admin/create, tipo **reCAPTCHA v2
+   ("Não sou um robô")**, com os domínios que vão hospedar o formulário (ex.:
+   `flynine.pages.dev`). Você recebe uma **Chave do site** e uma **Chave secreta**.
+2. No Salesforce: Setup → busque **"reCAPTCHA API Key Pairs"** → crie um registro novo com
+   essas duas chaves.
+3. No Salesforce: **Setup → Web-to-Lead → Create Web-to-Lead Form**.
+4. Selecione os campos: Nome, Sobrenome, Empresa, E-mail, Telefone, Descrição (e crie um
    campo customizado "Serviço de interesse" se quiser manter o `select` do formulário).
-3. O Salesforce gera um HTML com o `oid` (ID da sua organização) e outros hidden inputs.
-4. No arquivo `index.html`, troque:
+5. No campo "Par de chaves de API reCAPTCHA", selecione o registro criado no passo 2, e
+   deixe marcado "Ative o fallback do servidor" (recomendado pela própria Salesforce).
+6. Clique em **Gerar** — o Salesforce entrega um HTML com o `oid` (ID da sua organização),
+   o widget do reCAPTCHA e os demais hidden inputs.
+7. No arquivo `index.html`, troque:
    - `value="SEU_ORG_ID_AQUI"` pelo `oid` gerado.
    - `value="https://flynine.com.br/obrigado"` pela URL real de "obrigado" (pode ser uma
      seção `#obrigado` da própria landing page).
    - Se o Salesforce gerar um nome diferente para o campo customizado (ex.: `00N5f00000XXXXX`
      em vez de `00N_interest`), ajuste o `name` do `<select>` para o nome real.
-5. Publique o site — todo envio do formulário vira automaticamente um **Lead** no seu Salesforce.
+   - Cole o snippet/script do reCAPTCHA que o Salesforce gerou dentro do `<form>`, no lugar
+     indicado pelo HTML gerado (normalmente antes do botão de enviar).
+8. Publique o site — todo envio do formulário vira automaticamente um **Lead** no seu Salesforce.
+
+> Me mande o `oid` e o HTML completo gerado pelo Salesforce (ou só as chaves/nome do campo
+> customizado) e eu finalizo esse encaixe no `index.html` para você.
 
 ### 3.2 Organizar e priorizar os leads
 

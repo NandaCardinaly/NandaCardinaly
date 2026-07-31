@@ -903,8 +903,8 @@ section {
   color: var(--text-mute);
 }
 
-/* ============ WhatsApp float ============ */
-.whatsapp-float {
+/* ============ CTA flutuante ============ */
+.cta-float {
   position: fixed;
   bottom: 2.4rem;
   right: 2.4rem;
@@ -914,24 +914,25 @@ section {
   gap: 0.9rem;
   padding: 1.2rem 1.8rem;
   border-radius: 100vw;
-  background: #25d366;
-  color: #06210f;
+  background-image: var(--gradient);
+  color: #100311;
   font-weight: 700;
   font-size: 1.4rem;
-  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease;
+  box-shadow: 0 1.2rem 2.4rem rgba(255, 45, 107, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.whatsapp-float:hover {
+.cta-float:hover {
   transform: translateY(-3px);
+  box-shadow: 0 1.6rem 3rem rgba(255, 45, 107, 0.45);
 }
 
-.whatsapp-float svg {
-  width: 2rem;
-  height: 2rem;
+.cta-float svg {
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 @media (max-width: 560px) {
-  .whatsapp-float span { display: none; }
-  .whatsapp-float { padding: 1.4rem; }
+  .cta-float span { display: none; }
+  .cta-float { padding: 1.4rem; }
 }

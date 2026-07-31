@@ -7,6 +7,18 @@
   <meta name="description" content="A Flynine cria agentes de IA, automações de atendimento e vendas, e soluções de Business Intelligence para empresas que querem escalar com tecnologia.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function timestamp() {
+      var response = document.getElementById("g-recaptcha-response");
+      if (response == null || response.value.trim() == "") {
+        var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+      }
+    }
+    setInterval(timestamp, 500);
+  </script>
 </head>
 <body>
 
@@ -373,39 +385,39 @@
       </div>
 
       <!--
-        Formulário pronto para o Salesforce Web-to-Lead.
-        Para ativar: em Setup > Web-to-Lead, gere o form da sua org e copie os
-        valores de "oid" e "retURL" para os inputs hidden abaixo. Os campos
-        name="first_name"/"last_name"/"email"/"phone"/"company"/"description"
-        já usam os nomes padrão de Lead do Salesforce.
+        Formulário Salesforce Web-to-Lead da Flynine (org 00Das00000Fvr1l),
+        já com reCAPTCHA (API Key Pair "FlynineSite") configurado.
+        Gerado em Setup > Web-to-Lead > Create Web-to-Lead Form.
       -->
-      <form class="form-card" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-        <input type="hidden" name="oid" value="SEU_ORG_ID_AQUI">
-        <input type="hidden" name="retURL" value="https://flynine.com.br/obrigado">
+      <form id="leadForm" class="form-card" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Das00000Fvr1l" method="POST">
+        <input type="hidden" name="captcha_settings" value='{"keyname":"FlynineSite","fallback":"true","orgId":"00Das00000Fvr1l","ts":""}'>
+        <input type="hidden" name="oid" value="00Das00000Fvr1l">
+        <input type="hidden" name="retURL" value="https://flynine.vercel.app">
+        <input type="hidden" name="lead_source" value="Web">
 
         <div class="form-row">
           <label for="first_name">Nome</label>
-          <input type="text" id="first_name" name="first_name" required>
+          <input type="text" id="first_name" name="first_name" maxlength="40" required>
         </div>
         <div class="form-row">
           <label for="last_name">Sobrenome</label>
-          <input type="text" id="last_name" name="last_name" required>
+          <input type="text" id="last_name" name="last_name" maxlength="80" required>
         </div>
         <div class="form-row">
           <label for="company">Empresa</label>
-          <input type="text" id="company" name="company" required>
+          <input type="text" id="company" name="company" maxlength="40" required>
         </div>
         <div class="form-row">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" maxlength="80" required>
         </div>
         <div class="form-row">
-          <label for="phone">Telefone</label>
-          <input type="tel" id="phone" name="phone">
+          <label for="mobile">Celular</label>
+          <input type="tel" id="mobile" name="mobile" maxlength="40">
         </div>
         <div class="form-row">
-          <label for="00N_interest">Serviço de interesse</label>
-          <select id="00N_interest" name="00N_interest">
+          <label for="interest">Serviço de interesse</label>
+          <select id="interest">
             <option value="">Selecione</option>
             <option>Atendimento no WhatsApp com IA</option>
             <option>Integrações de pagamento</option>
@@ -420,6 +432,10 @@
         <div class="form-row">
           <label for="description">Conte um pouco sobre o desafio</label>
           <textarea id="description" name="description" rows="3"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="g-recaptcha" data-sitekey="6LdyUW8tAAAAADRNipaVKMyYG-KdN2YyHFawk8Qq"></div>
         </div>
 
         <button type="submit" class="btn btn--primary btn--block">Enviar e receber proposta</button>

@@ -21,4 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  const leadForm = document.getElementById("leadForm");
+  if (leadForm) {
+    leadForm.addEventListener("submit", () => {
+      const interest = document.getElementById("interest");
+      const description = document.getElementById("description");
+      if (interest && description && interest.value) {
+        description.value = `Serviço de interesse: ${interest.value}\n\n${description.value}`;
+      }
+    });
+  }
 });

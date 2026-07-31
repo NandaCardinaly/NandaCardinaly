@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flynine — Inteligência Artificial, Automações e Análise de Dados</title>
+  <meta name="description" content="A Flynine cria agentes de IA, automações de atendimento e vendas, e soluções de Business Intelligence para empresas que querem escalar com tecnologia.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#topo" class="brand">
+        <img class="brand__mark" src="assets/img/logo-mark.svg" alt="Flynine">
+        Flynine
+      </a>
+
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#contato" class="btn btn--ghost btn--sm">Falar com a gente</a>
+        <a href="#contato" class="btn btn--primary btn--sm">Solicitar proposta</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="topo">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">IA · Automação · Dados</span>
+        <h1>Sua empresa operando com <span class="grad">inteligência artificial</span>, 24 horas por dia</h1>
+        <p class="lead">
+          A Flynine transforma atendimento, vendas, cobrança e decisões de negócio em processos
+          automatizados com IA — do primeiro contato no WhatsApp ao dashboard que mostra o resultado.
+        </p>
+        <div class="hero__cta">
+          <a href="#contato" class="btn btn--primary">Quero uma proposta</a>
+          <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+        </div>
+        <ul class="hero__trust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Implantação sob medida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Pacotes fechados, sem surpresa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suporte direto com quem constrói</li>
+        </ul>
+      </div>
+
+      <div class="hero__panel">
+        <div class="hero__panel-head">
+          <span class="dot"></span> Operação Flynine em tempo real
+        </div>
+        <div class="hero__metric-grid">
+          <div class="hero__metric">
+            <strong>24/7</strong>
+            <span>Atendimento automatizado sem pausa</span>
+          </div>
+          <div class="hero__metric">
+            <strong>+1</strong>
+            <span>Canal único para WhatsApp, voz e site</span>
+          </div>
+          <div class="hero__metric">
+            <strong>IA</strong>
+            <span>Respostas com contexto do seu negócio</span>
+          </div>
+          <div class="hero__metric">
+            <strong>BI</strong>
+            <span>Dashboards para decisão, não achismo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Serviços / Badges ============ -->
+  <section class="badges" id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Pacotes de serviços prontos para colocar sua empresa em automação</h2>
+        <p>Cada serviço abaixo pode ser contratado isoladamente ou combinado em um pacote fechado, sob medida para o seu momento.</p>
+      </div>
+
+      <div class="badges__grid">
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2"/><path d="M21 3v6h-6"/><path d="M8 12h.01M12 12h.01M16 12h.01" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <span class="badge__tag">Mais pedido</span>
+          <h3>Atendimento no WhatsApp com IA</h3>
+          <p>Agente de IA que atende, qualifica e vende no WhatsApp, com dashboards, cobrança integrada e estrutura pronta para escalar o volume de conversas.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20" stroke-width="2"/><path d="M6 15h4" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Integrações de API de Pagamentos</h3>
+          <p>Conecte seu sistema a gateways de pagamento (Pix, cartão, boleto) com automações de confirmação, conciliação e disparo de recibos.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 8.4v7.2c0 1.6-1.4 2.7-3 2.4l-4-1V9l4-1c1.6-.3 3 .8 3 2.4Z"/><rect x="2" y="6" width="13" height="12" rx="2.5"/></svg>
+          </div>
+          <h3>Publicador automático para YouTube</h3>
+          <p>Worker que organiza, edita metadados e publica vídeos automaticamente no YouTube, com agendamento e regras próprias do seu canal.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="badge__tag badge__tag--soon">Alto risco / avançado</span>
+          <h3>Worker de Day Trading com IA</h3>
+          <p>Automação que analisa mercado e executa operações em tempo real com regras de risco definidas por você. Recomendado apenas com capital e limites bem definidos.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M9 22h6"/></svg>
+          </div>
+          <h3>Worker de voz com IA</h3>
+          <p>Atendimento por voz — em ligações telefônicas ou áudio no WhatsApp — com IA que entende, responde e transfere para humano quando necessário.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+          </div>
+          <h3>Business Intelligence</h3>
+          <p>Dashboards e relatórios automatizados que conectam suas fontes de dados e transformam números em decisão, sem depender de planilha manual.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 9V7a5 5 0 0 0-10 0v2"/><rect x="4" y="9" width="16" height="11" rx="2.5"/><path d="M12 14v3"/></svg>
+          </div>
+          <h3>Recuperação de Receita &amp; Cobrança automática</h3>
+          <p>Worker que identifica pagamentos em atraso, dispara réguas de cobrança personalizadas e reengaja clientes para recuperar receita perdida.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Agentes de IA multicanal</h3>
+          <p>Um mesmo agente respondendo com consistência no site, Instagram e WhatsApp, com histórico e contexto unificados por cliente.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3>Automação de processos internos</h3>
+          <p>Rotinas manuais e repetitivas (planilhas, e-mails, relatórios, cadastros) automatizadas com IA, liberando o seu time para o que importa.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>
+          </div>
+          <h3>CRM &amp; Lead scoring inteligente</h3>
+          <p>Organização e priorização automática dos seus leads (inclusive integrado ao seu Salesforce), para o time comercial focar em quem tem mais chance de comprar.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M4 15l4-4 3 3 6-7"/></svg>
+          </div>
+          <h3>Geração de conteúdo com IA</h3>
+          <p>Textos, roteiros e posts para redes sociais e blog, gerados e revisados com IA a partir do tom de voz e da estratégia da sua marca.</p>
+        </div>
+
+        <div class="badge">
+          <div class="badge__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3v6l-6 9a1 1 0 0 0 .8 1.6h16.4a1 1 0 0 0 .8-1.6l-6-9V3"/><path d="M9 3h6M6 15h12"/></svg>
+          </div>
+          <h3>Integração de sistemas &amp; API custom</h3>
+          <p>Conectamos seu ERP, CRM, planilhas e ferramentas em um fluxo único, eliminando retrabalho e dados duplicados entre sistemas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Como funciona ============ -->
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do diagnóstico à automação rodando, em quatro passos</h2>
+      </div>
+
+      <div class="steps__grid">
+        <div class="step">
+          <div class="step__num">01</div>
+          <h3>Diagnóstico</h3>
+          <p>Entendemos seu processo atual, onde estão os gargalos e qual automação gera resultado mais rápido.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <h3>Proposta fechada</h3>
+          <p>Você recebe um pacote de serviço claro, com escopo e prazo definidos — sem letra pequena.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <h3>Implementação</h3>
+          <p>Construímos e testamos a automação com você, já conectada às suas ferramentas atuais.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <h3>Suporte &amp; escala</h3>
+          <p>Acompanhamos os resultados e evoluímos a solução conforme sua empresa cresce.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Diferenciais ============ -->
+  <section class="diff">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Por que a Flynine</span>
+        <h2>Tecnologia de ponta, sem complicar sua operação</h2>
+      </div>
+
+      <div class="diff__grid">
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Pacotes fechados</h4>
+            <p>Escopo, prazo e entregável definidos antes de começar — você sabe exatamente o que vai receber.</p>
+          </div>
+        </div>
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Feito para escalar</h4>
+            <p>Começamos pequeno, do seu jeito, e evoluímos a automação junto com o crescimento da sua empresa.</p>
+          </div>
+        </div>
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Dados no centro</h4>
+            <p>Toda automação vem acompanhada de indicadores — você acompanha o resultado, não só a promessa.</p>
+          </div>
+        </div>
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Suporte direto</h4>
+            <p>Você fala com quem constrói a solução, sem camadas de atendimento entre você e a automação.</p>
+          </div>
+        </div>
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Integrações reais</h4>
+            <p>Conectamos ao que você já usa — WhatsApp, pagamentos, planilhas, CRM — sem trocar sua ferramenta de trabalho.</p>
+          </div>
+        </div>
+        <div class="diff__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div>
+            <h4>Transparência de preço</h4>
+            <p>Proposta clara antes da contratação, sem custo surpresa depois que o projeto já está em andamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Pacotes ============ -->
+  <section id="pacotes">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pacotes</span>
+        <h2>Escolha o ponto de partida da sua automação</h2>
+        <p>Todos os pacotes são personalizados na proposta final — os itens abaixo mostram o que costuma compor cada nível.</p>
+      </div>
+
+      <div class="plans__grid">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="plan__for">Para quem quer começar a automatizar o atendimento</p>
+          <p class="plan__price">Sob consulta <span>proposta personalizada</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Agente de IA no WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Dashboard simples de conversas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Configuração inicial e treinamento da IA</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suporte para ajustes no primeiro mês</li>
+          </ul>
+          <a href="#contato" class="btn btn--ghost btn--block">Falar sobre o Starter</a>
+        </div>
+
+        <div class="plan plan--highlight">
+          <span class="plan__badge">Mais popular</span>
+          <h3>Growth</h3>
+          <p class="plan__for">Para quem já vende e quer atendimento + cobrança sem perder venda</p>
+          <p class="plan__price">Sob consulta <span>proposta personalizada</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Tudo do Starter</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Integração de pagamentos (Pix, cartão)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Recuperação de receita e cobrança automática</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Dashboard de vendas e atendimento</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Integração com CRM (Salesforce)</li>
+          </ul>
+          <a href="#contato" class="btn btn--primary btn--block">Falar sobre o Growth</a>
+        </div>
+
+        <div class="plan">
+          <h3>Scale</h3>
+          <p class="plan__for">Para operações que querem IA em várias frentes ao mesmo tempo</p>
+          <p class="plan__price">Sob consulta <span>proposta personalizada</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Tudo do Growth</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Worker de voz com IA (telefone/WhatsApp)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Business Intelligence completo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Automação de processos internos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Suporte prioritário e evolução contínua</li>
+          </ul>
+          <a href="#contato" class="btn btn--ghost btn--block">Falar sobre o Scale</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contato / Lead form (Salesforce Web-to-Lead) ============ -->
+  <section class="contact" id="contato">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <span class="eyebrow">Vamos conversar</span>
+        <h2>Conte sobre sua empresa e receba uma proposta</h2>
+        <p>Preencha o formulário ao lado com os dados da sua empresa. Retornamos com uma proposta personalizada para o seu momento.</p>
+
+        <div class="contact__channels">
+          <div class="contact__channel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="m4 5 8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <strong>Resposta garantida</strong>
+              <span>Retornamos por e-mail em até 1 dia útil</span>
+            </div>
+          </div>
+          <div class="contact__channel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
+            <div>
+              <strong>E-mail</strong>
+              <span>contato@flynine.com.br — atualize com seu domínio</span>
+            </div>
+          </div>
+          <div class="contact__channel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 8h5M8 16h4"/></svg>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/company/flynine — atualize com seu link</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Formulário pronto para o Salesforce Web-to-Lead.
+        Para ativar: em Setup > Web-to-Lead, gere o form da sua org e copie os
+        valores de "oid" e "retURL" para os inputs hidden abaixo. Os campos
+        name="first_name"/"last_name"/"email"/"phone"/"company"/"description"
+        já usam os nomes padrão de Lead do Salesforce.
+      -->
+      <form class="form-card" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type="hidden" name="oid" value="SEU_ORG_ID_AQUI">
+        <input type="hidden" name="retURL" value="https://flynine.com.br/obrigado">
+
+        <div class="form-row">
+          <label for="first_name">Nome</label>
+          <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-row">
+          <label for="last_name">Sobrenome</label>
+          <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div class="form-row">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company" required>
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="00N_interest">Serviço de interesse</label>
+          <select id="00N_interest" name="00N_interest">
+            <option value="">Selecione</option>
+            <option>Atendimento no WhatsApp com IA</option>
+            <option>Integrações de pagamento</option>
+            <option>Publicador para YouTube</option>
+            <option>Worker de Day Trading com IA</option>
+            <option>Worker de voz com IA</option>
+            <option>Business Intelligence</option>
+            <option>Recuperação de receita e cobrança</option>
+            <option>Outro / não sei ainda</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="description">Conte um pouco sobre o desafio</label>
+          <textarea id="description" name="description" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">Enviar e receber proposta</button>
+        <p class="form-note">Seus dados vão direto para o nosso CRM (Salesforce) — sem spam, só contato humano.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2>Ainda com dúvidas?</h2>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__q">Preciso ter um time técnico para usar as automações da Flynine?</button>
+          <div class="faq__a"><p>Não. Cuidamos da implementação e deixamos a operação simples para o seu time usar no dia a dia, com suporte durante o período de ajuste.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Consigo contratar só um serviço, sem pacote completo?</button>
+          <div class="faq__a"><p>Sim. Os pacotes Starter, Growth e Scale são pontos de partida, mas cada serviço também pode ser contratado isoladamente conforme sua necessidade.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Quanto tempo leva para a automação entrar no ar?</button>
+          <div class="faq__a"><p>Depende do escopo. Automações simples (como o agente de WhatsApp) costumam ficar prontas em poucos dias após o diagnóstico e aprovação da proposta.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">O worker de day trading garante resultado?</button>
+          <div class="faq__a"><p>Não. É uma ferramenta de automação de execução com regras definidas por você — mercado financeiro envolve risco, e nenhum resultado é garantido.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">A Flynine integra com o que eu já uso hoje?</button>
+          <div class="faq__a"><p>Sim. Trabalhamos para conectar às ferramentas que você já tem — WhatsApp, gateways de pagamento, planilhas, CRM e outros sistemas — em vez de te fazer trocar de ferramenta.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA final ============ -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>Pronto para automatizar o próximo passo da sua empresa?</h2>
+      <p>Fale com a Flynine hoje e descubra qual pacote se encaixa melhor no seu momento.</p>
+      <div class="cta-final__actions">
+        <a href="#contato" class="btn btn--primary">Solicitar proposta</a>
+        <a href="#pacotes" class="btn btn--ghost">Ver pacotes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#topo" class="brand">
+            <img class="brand__mark" src="assets/img/logo-mark.svg" alt="Flynine">
+            Flynine
+          </a>
+          <p>Inteligência artificial, automações e análise de dados para empresas que querem escalar sem perder o controle.</p>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Atendimento com IA</a></li>
+            <li><a href="#servicos">Business Intelligence</a></li>
+            <li><a href="#servicos">Automação de processos</a></li>
+            <li><a href="#pacotes">Pacotes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Flynine. Todos os direitos reservados.</span>
+        <span>Feito com automação, IA e um bom café.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contato" class="cta-float">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+    <span>Solicitar proposta</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
